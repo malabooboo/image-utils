@@ -1,0 +1,17 @@
+{
+  "name": "image-resizer-tool",
+  "version": "1.0.0",
+  "description": "Image utils",
+  "main": "index.js",
+  "author": "Tim Malabuyo",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-image-resize": "^0.10.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "yargs": "^6.3.0"
+  }
+}

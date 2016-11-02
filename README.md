@@ -1,2 +1,2 @@
-# image-utils
-Some image utils for convenience
+# Image Utilities
+Some image utils I use for convenience.
