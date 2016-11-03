@@ -2,7 +2,8 @@ import gulp from 'gulp';
 import imageResize from 'gulp-image-resize';
 import rename from 'gulp-rename';
 import util from 'gulp-util';
-var argv = require('yargs').argv;
+
+let argv = require('yargs').argv;
 
 /**
  * Quick resize
@@ -20,7 +21,7 @@ gulp.task('resize', () => {
 /**
  * Exports various Growth Engine icon sizes.
  */
-let iconSizes = [];
+const iconSizes = [];
 
 [128, 64, 32, 16].forEach((size) => {
   let resizeImageTask = 'resize_' + size;
