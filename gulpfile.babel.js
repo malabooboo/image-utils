@@ -19,6 +19,18 @@ gulp.task('resize', () => {
 });
 
 /**
+ * Converts images to webp
+ */
+gulp.task('webp', function() {
+  return gulp.src('src/**/*.{jpg,png}')
+      .pipe(webp({quality : 45}))
+      .pipe(gulp.dest('exported/webp/'))
+      .on('end', () => {
+        util.log(util.colors.black.bgGreen('Images to webp done'));
+      });
+});
+
+/**
  * Exports various Growth Engine icon sizes.
  */
 const iconSizes = [];
